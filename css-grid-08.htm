@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns:200px 1fr 1fr 1fr;
+        }
+        .grid-box{
+            border: 2px solid red;  
+        }
+        .one{
+            grid-row:1/span 3;
+            background-color: red;
+        }
+        .two{
+            grid-column: 2/span 3;
+            grid-row: 1/span ;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="grid-box one">
+            <h1>box-1</h1>
+        </div>
+        <div class="grid-box two">
+            <h1>box-2</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-3</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-4</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-5</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-6</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-7</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-8</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-9</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-10</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-11</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-12</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-13</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-14</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-15</h1>
+        </div>
+        <div class="grid-box">
+            <h1>box-16</h1>
+        </div>
+    </section>
+</body>
+</html>

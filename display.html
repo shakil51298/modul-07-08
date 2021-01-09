@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+      .nav{
+          background-color: turquoise;
+      }
+      .nav ul{
+          list-style: none;
+          display: flex;
+      }
+      .nav ul li{
+          padding:14px 16px;
+      }
+      .containeer{
+          
+      }
+      .drop-down ul{
+          display: block;
+          position: absolute;
+          top: 14px;
+          left: -45px;
+      }
+      .drop-down{
+         display: none;
+         position: relative;
+         
+      }
+      .drop-down ul li{
+        background-color: tomato;
+      }
+      .nav ul li:hover .drop-down{
+          display: block;
+      }
+    </style>
+</head>
+<body>
+    <div class="containeer">
+        <div class="nav">
+            <ul>
+                <li>link-1
+                    <div class="drop-down">
+                        <ul>
+                            <li>menu-1</li>
+                            <li>menu-2</li>
+                            <li>menu-3</li>
+                            <li>menu-4</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>link-2</li>
+                <li>link-3</li>
+                <li>link-4</li>
+                <li>link-5
+                    <div class="drop-down">
+                        <ul>
+                            <li>menu-1</li>
+                            <li>menu-2</li>
+                            <li>menu-3</li>
+                            <li>menu-4</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>link-6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
