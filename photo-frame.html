@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-frame</title>
+    <style>
+        .photo{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+           
+        }
+        .frame{
+            border: 10px solid red;
+            border-radius: 5px;
+            max-width: 250px;
+            height: 300px;
+            margin: 20px 0 0 0;
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            top: 75px;
+            display:none ;
+            background-color: rgba(188, 143, 143,02);
+            justify-content: center;
+            align-content: center;
+            height: 150px;
+            text-align: center;
+            
+            
+        }
+        .frame:hover .text{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <section class="main">
+       <div class="frame">
+           <div class="photo">
+               <img src="images/bat.jpg" alt="">
+           </div>
+           <div class="text">
+               <h3>this is my photo</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sunt non vel dolores cumque molestias quae quisquam, earum provident omnis.</p>
+           </div>
+       </div>
+   </section> 
+</body>
+</html>
